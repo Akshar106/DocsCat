@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.te.projecttranslate.MainActivity">
+
+    <TextView
+        android:id="@+id/sourceLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="Detecting.."
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/sourceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint="Type Here"
+        android:maxLines="3"
+        android:minHeight="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chooseLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:text="Choose your language"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/langSelector"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Translate" />
+
+    <Button
+        android:id="@+id/ttsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Text to Speech" />
+
+
+    <Button
+        android:id="@+id/speakBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Speak" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:layout_margin="5sp"-->
+    <!--        android:text="Translated Text"/>-->
+
+    <TextView
+        android:id="@+id/translatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:hint="Waiting for translation..."
+        android:maxLines="3"
+        android:text=""
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/clipBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Copy to Clipboard" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:textColor="@color/colorAccent"
+    android:layout_marginTop="130dp"
+    android:hint="Created By : Akshar Patel, Dhvani Patel and Khushi Shah"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="0dp" />
+</LinearLayout>

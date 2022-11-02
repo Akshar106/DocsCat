@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.te.projecttranslate.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="100dp"
+        android:text="Scan Image for Text"
+        android:id="@+id/ocrBtn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Translate"
+        android:id="@+id/translateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ocrBtn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="690dp"
+        android:hint="Created By : Akshar Patel, Dhvani Patel and Khushi Shah"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="0dp" />
+</RelativeLayout>
